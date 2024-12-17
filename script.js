@@ -30,21 +30,25 @@ console.log(scontOne);
 console.log(sconTwo);
 
 
-// if (eta < 18) {
-//     console.log("Il biglietto costa" + somma - scontOne + " " + "€ !");
-// } else if (eta > 65) {
-//     console.log("Il biglietto costa" + somma - sconTwo + " " + "€ !");
-// }
-
-function risultato() {
-    if (eta < 18) {
-        document.getElementById("demo").innerHTML = `Il biglietto costa ${somma - scontOne} € !`;
-    } else if (eta > 65) {
-        document.getElementById("demo").innerHTML = `Il biglietto costa ${somma - scontOne} € !`;
-    } else {
-        document.getElementById("demo").innerHTML = `Il biglietto costa ${somma} € !`;
-    }
+if (eta < 18) {
+    console.log("Il biglietto costa" + somma - scontOne + " " + "€ !");
+} else if (eta > 65) {
+    console.log("Il biglietto costa" + somma - sconTwo + " " + "€ !");
+} else {
+    console.log("Il biglietto costa " + somma + " " + "€ !");
 }
+
+// Bonus
+
+// function risultato() {
+//     if (eta < 18) {
+//         document.getElementById("demo").innerHTML = `Il biglietto costa ${somma - scontOne} € !`;
+//     } else if (eta > 65) {
+//         document.getElementById("demo").innerHTML = `Il biglietto costa ${somma - scontOne} € !`;
+//     } else {
+//         document.getElementById("demo").innerHTML = `Il biglietto costa ${somma} € !`;
+//     }
+// }
 
 
 
