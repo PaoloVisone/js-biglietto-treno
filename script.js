@@ -22,19 +22,25 @@ let somma = prezzo * chilometri;
 
 console.log(somma + " " + "€");
 
+// Sconto per minori
 let scontOne = somma * scontoMin / 100;
 
+// Sconto per over 65
 let sconTwo = somma * scontoMax / 100;
 
 console.log(scontOne);
 console.log(sconTwo);
 
+// Conditional statemant
 
+// Se minore di 18
 if (eta < 18) {
     console.log("Il biglietto costa" + somma - scontOne + " " + "€ !");
-} else if (eta > 65) {
+}// Se over 65
+else if (eta > 65) {
     console.log("Il biglietto costa" + somma - sconTwo + " " + "€ !");
-} else {
+}// Se tra 18 e 65 
+else {
     console.log("Il biglietto costa " + somma + " " + "€ !");
 }
 
